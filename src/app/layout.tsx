@@ -16,15 +16,15 @@ export default async function RootLayout({
     <html lang="ko">
       <head>
         <meta charSet="UTF-8" />
-        <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="/image/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <meta name="keywords" content="윤석열 탄핵, 윤석열 파면" />
         <meta name="author" content="륜곰담곰" />
 
         <meta property="og:title" content="404 President Not Found" />
-        <meta property="og:description" content="으잉? 대통령어디감? 라면에 파말아먹나" />
-        <meta property="og:image" content="/image/ogimage.svg" />
+        <meta property="og:description" content="대통령어디감? 라면에 파말아먹나" />
+        <meta property="og:image" content="/image/ogImage.jpg" />
         <meta property="og:url" content="https://250404notfound.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="250404notfound" />
