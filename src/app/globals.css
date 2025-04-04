@@ -1,26 +1,75 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "jejuG";
+  src: url("/font/JejuGothic.ttf");
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "jejuM";
+  src: url("/font/JejuMyeongjo.ttf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+ul li {
+  position: relative;
+  padding-left: 1rem;
+}
+ul li::before {
+  width: 4px;
+  height: 4px;
+  background: #444;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+}
+
+@keyframes BigSmall {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  0% {
+    transform: scale(1);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes odubanjung {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  0% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes odubanjung2 {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-1.5deg);
+  }
+  0% {
+    transform: rotate(0);
+  }
+}
+
+.bgMotion {
+  animation: BigSmall 0.8s infinite linear;
+}
+
+.bgMotion2 {
+  animation: odubanjung 0.1s infinite;
+}
+
+.bgMotion3 {
+  animation: odubanjung2 0.1s infinite;
 }
